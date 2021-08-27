@@ -17,7 +17,7 @@ from opencensus.trace.tracer import Tracer
 from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
 # Key. A better please to keep it is at config file but I wanted to preserve the project structure
-key = '8a207474-ce3c-4895-a505-c1bac0650a94;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/'
+key = 'd6656073-f468-4488-9ce9-d94bea2a90d3;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/'
 
 # Logging
 logger = logging.getLogger(__name__)
