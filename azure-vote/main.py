@@ -9,7 +9,7 @@ from datetime import datetime
 
 # App Insights
 # Configuration is per the documentation : https://pypi.org/project/opencensus-ext-azure/
-from opencensus.ext.azure.log_exporter import AzureEventHandler
+from opencensus.ext.azure.log_exporter import AzureLogHandler
 from opencensus.ext.azure import metrics_exporter
 from opencensus.ext.azure.trace_exporter import AzureExporter
 from opencensus.trace.samplers import ProbabilitySampler
@@ -21,7 +21,7 @@ key = '8a207474-ce3c-4895-a505-c1bac0650a94;IngestionEndpoint=https://westus2-2.
 
 # Logging
 logger = logging.getLogger(__name__)
-logger.addHandler(AzureEventHandler(connection_string=f'InstrumentationKey={key}'))
+logger.addHandler(AzureLogHandler(connection_string=f'InstrumentationKey={key}'))
 logger.setLevel(logging.INFO)
 
 # Metrics
