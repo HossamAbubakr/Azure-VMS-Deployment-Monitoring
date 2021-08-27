@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-resourceGroup="cloud-demo-155841"
+resourceGroup="acdnd-c4-project"
 location="westus"
 osType="UbuntuLTS"
 vmssName="udacity-vmss"
